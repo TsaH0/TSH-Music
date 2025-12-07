@@ -21,7 +21,7 @@ export default function MusicUI() {
   const [volume, setVolume] = useState<number>(1);
 
   const audioRef = useRef<HTMLAudioElement>(null);
-  const api = "https://music-backend-ruby.vercel.app/download";
+  const api = "https://music-backend-production-69aa.up.railway.app/download";
   const togglePlay = () => {
     if (audioRef.current) {
       if (isPlaying) {
